@@ -1,0 +1,31 @@
+CREATE TABLE desserts (id INTEGER PRIMARY KEY, item TEXT, flavor TEXT, calories INTEGER, Price INTEGER, sold INTEGER) ;
+
+INSERT into desserts Values (1, "cookie", "oatmeal raisin", 120, 1, 5);
+INSERT into desserts Values (2, "cake", "chocolate",112, 8, 9);
+INSERT into desserts Values (3, "candy", "cherry", 181, 7, 99);
+INSERT into desserts Values (4, "scone", "chocolate", 78, 11, 5);
+INSERT into desserts Values (5, "pie", "apple", 178, 1, 5);
+INSERT into desserts Values (6, "cake pop", "chocolate", 233, 18, 5);
+INSERT into desserts Values (7, "muffin", "blueberry", 250, 32, 5);
+INSERT into desserts Values (8, "croissant", "butter", 89, 10, 5);
+INSERT into desserts Values (9, "danish", "cream cheese", 90, 16, 5);
+INSERT into desserts Values (10, "pudding", "chocolate", 190, 23, 5);
+INSERT into desserts Values (11, "lemon bar", "Lemon", 180, 65, 5);
+INSERT into desserts Values (12, "parfait", "Berry", 168, 45, 5);
+INSERT into desserts Values (13, "ice cream", "chocolate chip", 300, 19, 5);
+INSERT into desserts Values (14, "sorbet", "strawberry", 175, 6, 5);
+INSERT into desserts Values (15, "toffee", "caramel", 188,97, 7);
+
+
+Select * From desserts order by calories;
+
+Select max(sold) from desserts
+
+
+--display the database ordered by price. 
+SELECT * FROM desserts
+ORDER BY calories; 
+
+--what is the max number of items sold? 
+SELECT max(sold) FROM desserts
+
